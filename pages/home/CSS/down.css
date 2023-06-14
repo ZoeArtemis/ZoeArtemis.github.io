@@ -1,0 +1,43 @@
+.container_mouse{
+    z-index: 1;
+    position: absolute;
+    bottom: 2%;
+
+    font-family: var(--spider-p-text-bold);
+    color: var(--spider-red);
+}
+
+.mouse-btn {
+    margin: 10px auto;
+    width: 40px;
+    height: 80px;
+    border: 5px solid var(--spider-red);
+    border-radius: 20px;
+    display: flex;
+    z-index: 3;
+  }
+  
+  .mouse-scroll {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(170deg, rgba(255, 40, 101, 0.918), rgb(255, 31, 106));
+    border-radius: 50%;
+    margin: auto;
+    animation: scrolling13 1s linear infinite;
+    z-index: 1000;
+  }
+  
+  @keyframes scrolling13 {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+  }
+
+  

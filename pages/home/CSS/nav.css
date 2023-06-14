@@ -1,0 +1,127 @@
+#navigation {
+    background-color: var(--spider-blue);
+    min-height: 2vw;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    position: fixed;
+    top: 0;
+
+    transition: top 0.3s;
+
+    z-index: 2;
+}
+
+.navigation button {
+    background-color: var(--spider-light);
+    font-family: var(--spider-p-text-bold);
+    color: var(--spider-blue);
+
+    text-decoration: none;
+    border-style: none;
+    padding: 10px 20px 10px 20px;
+    margin-right: .5em;
+    border-radius: 1em;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--spider-light);
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation  button:hover, #button-outlined:hover{
+    background-color: var(--spider-light);
+    font-family: var(--spider-p-text-bold);
+    color: var(--spider-red);
+
+    text-decoration: none;
+    border-style: none;
+    padding: 10px 20px 10px 20px;
+    margin-right: .5em;
+    border-radius: 1em;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--spider-light);
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+#button-outlined {
+    background-color: transparent;
+    font-family: var(--spider-p-text-bold);
+    color: var(--spider-light);
+
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--spider-light);
+    padding: 10px 20px 10px 20px;
+    margin-right: .5em;
+    border-radius: 1em;
+
+    transition: .5s;
+}
+
+.left-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3em;
+}
+
+.right-nav {
+    padding-right: 3em;
+}
+
+.navigation p {
+    font-family: var(--spider-p-text-bold);
+    color: var(--spider-light);
+}
+
+@media (max-width: 1150px) {
+
+}
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 870px) {
+    .left-nav {
+        width: 90vw;
+        
+    }
+
+    .right-nav {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        
+        min-width: 200px ;
+    }
+
+    .center-nav {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 780px) {
+    .left-nav {
+        min-width: 500px;
+    }
+
+    .right-nav {
+        display: none;
+        visibility: hidden;
+    }
+
+}

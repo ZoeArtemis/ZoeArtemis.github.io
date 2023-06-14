@@ -1,0 +1,46 @@
+@import url(pages/home/index.html);
+
+
+@font-face {
+    font-family: NeueMontreal-Bold;
+    src: url(/assets/fonts/NeueMontreal-Bold.otf);
+}
+
+@font-face {
+    font-family: NeueMontreal-Regular;
+    src: url(/assets/fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+    font-family: Molot;
+    src: url(/assets/fonts/Molot.otf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--spider-black);
+}
+
+:root {
+    /* FONTS */
+    --spider-heading-text: Molot;
+    --spider-p-text: NeueMontreal-Regular;
+    --spider-p-text-bold: NeueMontreal-Bold;
+
+    /* COLOR */
+    --spider-black: #262322;
+    --spider-light: #F8E9E9;
+    --spider-blue: #2660A4;
+    --spider-orange: #F46036;
+    --spider-red: #D7263D;
+
+    --spider-red-gradient: linear-gradient(90deg, rgba(0,0,0,0.6643907563025211) 0%, rgba(215,38,61,1) 90%);
+}

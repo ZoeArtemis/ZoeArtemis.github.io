@@ -1,0 +1,36 @@
+.about {
+    height: 50vh;
+    width: auto;
+    background-color: var(--spider-black);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: clamp(30px, 4vw, 4vw);
+    color: var(--spider-red);
+}
+
+.about button {
+    background-color: var(--spider-light);
+    font-family: var(--spider-p-text-bold);
+    color: var(--spider-blue);
+
+    text-decoration: none;
+    border-style: none;
+    padding: 10px 20px 10px 20px;
+    margin-top: 1em;
+    border-radius: 1em;
+    transition: 1s;
+
+    cursor: pointer;
+    
+}
+
+.about button:hover {
+    color: var(--spider-red);
+    transition: 1s;
+}

@@ -1,0 +1,144 @@
+.showing {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    
+    overflow: hidden;
+
+    width: 100%;
+    height: 80vh;
+
+    background-color: var(--spider-blue);
+    background-image: url(../../../assets/img/poster.jpg);
+}
+
+
+.showing h1 {
+    font-size: clamp(20px, 2vw, 4vw);
+    color: var(--spider-light);
+    padding-bottom: 22px;
+    text-align: start;
+    margin-right: 100px;
+}
+
+.showing h3 {
+    font-size: clamp(12px, 1vw, 2vw);
+    color: var(--spider-light);
+    font-family: var(--spider-p-text);
+}
+
+.showing p {
+    padding-right: 5em;
+    font-family: var(--spider-p-text);
+    color: var(--spider-light);
+}
+
+#bold {
+    font-family: var(--spider-p-text-bold);
+    padding-top: none;
+}
+
+.img-showing {
+    width: 50vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: var(--spider-red-gradient);
+}
+
+.img-showing img {
+    width: 40%;
+    height: 90%;
+    transition: 1.5s;
+    
+}
+
+.img-showing img:hover {
+    transform: scale(1.05);
+}
+
+.info-showing {
+    max-width: 50%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    background-color: var(--spider-red);
+
+    padding-left: 1em;
+    padding-top: 20px;
+}
+
+#poster-bg {
+    z-index: -1;
+    position: absolute;
+    top: 175%;
+    width: 50%;
+    height: 90%;
+}
+
+.showing button {
+    background-color: var(--spider-light);
+    font-family: var(--spider-p-text-bold);
+    color: var(--spider-red);
+
+    text-decoration: none;
+    border-style: none;
+    padding: 10px 20px 10px 20px;
+    margin-right: .5em;
+    border-radius: 1em;
+}
+
+.showing button {
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .img-showing {
+        width: 60vw;
+    }
+
+    .info-showing {
+        width: 40vw;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .showing {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        height: 150vh;
+    }
+    .img-showing {
+        height: 100%;
+        width: 100%;
+    }
+
+    .info-showing {
+        min-height: 50%;
+        min-width: 100%;
+
+        padding-left: 5em;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .info-showing h1{
+        padding-right: 1rem;
+    }
+
+    .img-showing img{
+        width: 50%;
+        height: 70%;
+    }
+}

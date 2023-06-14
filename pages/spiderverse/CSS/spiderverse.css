@@ -1,0 +1,25 @@
+.spiderverse {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.img-spiderverse-container{
+    width: 50vw;
+    height: 90vh;
+    background-color: var(--spider-red);
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.details-spiderverse-container {
+    display: flex;
+    min-width: 50vw;
+    min-height: 200vh;
+    background-color: var(--spider-blue);
+}
